@@ -104,7 +104,9 @@
                   </td>
 
                   {% if i.stock_quantity < 1 %}
-                    <td><button class="btn btn-secondary itembut" disabled>Add</button></td>
+                    <td><button class="btn btn-secondary itembut" disabled>Add</button>
+                      <p style="color:red;">*Out of Stock</p>
+                    </td>
                   {% else %}
                     <td><button class="btn btn-primary itembut">Add</button></td>
                   {% endif %}
