@@ -62,7 +62,7 @@ def confirm_order(request):
             item_obj.depleteStock(int(it[2]))
             item_obj.save()
 
-    return redirect('/itemList')
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 
 
